@@ -1,0 +1,17 @@
+[package]
+name = "sitemap-iter"
+version = "0.1.0"
+authors = ["Icelk <main@icelk.dev>"]
+edition = "2021"
+rust-version = "1.56"
+description = "Sitemap iterator adhering to the sitemap protocol, as used by WordPress."
+readme = "README.md"
+homepage = "https://kvarn.org/search.#integrations"
+repository = "https://github.com/Icelk/sitemap-iter/"
+license = "MIT OR Apache-2.0"
+keywords = ["sitemap", "wordpress", "sitemap-protocol"]
+categories = ["parser-implementations", "web-programming"]
+
+[dependencies]
+roxmltree = { version = "^0.14" }
+log = "^0.4"
