@@ -2,6 +2,7 @@ use log::{error, warn};
 use std::fmt::Debug;
 use std::str::FromStr;
 
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub enum FrequencyParseError {
     InvalidFrequency,
 }
@@ -66,6 +67,7 @@ pub struct UrlEntry<'a> {
     /// Ranges from `0.0` to `1.0`
     pub priority: Option<f32>,
 }
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub enum Error {
     /// The mandatory `<urlset>` tag is missing.
     ///
